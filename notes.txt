@@ -1,0 +1,17 @@
+- input field to add a task
+- button to add a task
+- list to display the tasks
+--- maintain an array of tasks in the state, 
+each task is an object with a title and a completed property
+- button to clear all tasks
+- button to save the tasks
+- button to edit a task
+- button to delete a task
+- checkbox to complete a task / uncomplete a task
+
+["Sample task", "Sample task 2", "Sample task 3"] --> 
+[ 
+    { id: 1, title: "Sample task", isCompleted: false, createdAt: new Date() }, 
+    { id: 2, title: "Sample task 2", isCompleted: false, createdAt: new Date() }, 
+    { id: 3, title: "Sample task 3", isCompleted: false, createdAt: new Date() } 
+]

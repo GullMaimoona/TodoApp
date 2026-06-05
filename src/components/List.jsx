@@ -1,15 +1,19 @@
-import React from 'react'
-import Item from "./Item"
+import Item from "./Item";
 
-function List() {
+function List(props) {
   return (
     <div className="mt-5 space-y-3">
-
-      <Item />
-      
-
+      {props.tasks.map((task) => (
+        <Item
+          key={task.id}
+          id={task.id}
+          title={task.title}
+          isCompleted={task.isCompleted}
+          createdAt={task.createdAt}
+        />
+      ))}
     </div>
   );
 }
 
-export default List
+export default List;
